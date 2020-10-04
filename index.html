@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,400&family=Volkhov:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>freeCodeCamp Survey Form</title>
+</head>
+<body>
+    <header class="header">
+        <h1 id="title" class="text-center">Welcome to feeling form of freeCodeCamp</h1>
+        <p id="description" class="text-center">Complete the following form, we care about you.</p>
+    </header>
+    <main class="container">
+        <form action="" id="survey-form">
+            <div class="dates">
+                <div class="dates-group">
+                    <label for="name" id="name-label">Complete Name</label>
+                    <input type="text" id="name" placeholder="your complete name here" required="required">
+                </div>
+
+                <div class="dates-group">
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" id="email" required="required" placeholder="example@example.com">
+                </div>
+
+                <div class="dates-group">
+                    <label for="number" id="number-label">Age</label>
+                    <input type="number" name="" id="number" required="required" min="1" max="100" placeholder="18">
+                </div>
+            </div>
+
+            <div>
+                <div class="dropdown">
+                    <label for="dropdown">How are you?</label>
+                    <select name="" id="dropdown">
+                        <option disabled selected></option>
+                        <option value="1">Very bad</option>
+                        <option value="2">Bad</option>
+                        <option value="3">Good</option>
+                        <option value="4">Very Good</option>
+                    </select>
+                </div>
+
+                <div class="radio-group">
+                    <p>You are happy?</p>
+                    <label for="si">Si</label>
+                    <input type="radio" id="si" name="happy" value="1">
+                    <label for="no">No</label>
+                    <input type="radio" id="no" name="happy" value="0">
+                </div>
+
+                <div class="boxes-group">
+                    <p>What things are you missing?</p>
+                    <label for="train">To train</label>
+                    <input type="checkbox" name="" value="train" id="train">
+
+                    <label for="montain">Climb mountains</label>
+                    <input type="checkbox" name="" value="montain" id="montain">
+
+                    <label for="travel">Travel</label>
+                    <input type="checkbox" name="" value="travel" id="travel">
+
+                    <label for="parachute">Parachute jumping</label>
+                    <input type="checkbox" name="" value="parachute" id="parachute">
+
+                    <label for="love">To say "I love you"</label>
+                    <input type="checkbox" name="" value="love" id="love">
+                    
+                    <label for="hug">Hug</label>
+                    <input type="checkbox" name="" value="hug" id="hug">
+
+                    <label for="forgive">Forgive</label>
+                    <input type="checkbox" name="" value="forgive" id="forgive">
+
+                    <label for="whatsapp">Send a whatsapp</label>
+                    <input type="checkbox" name="" value="whatsapp" id="whatsapp">
+
+                    <label for="call">To call</label>
+                    <input type="checkbox" name="" value="call" id="call">
+
+                    <label for="meet">Meet again</label>
+                    <input type="checkbox" name="" value="meet" id="meet">
+                </div>
+
+                <textarea name="" id="comentaries" cols="30" rows="10"></textarea>
+            </div>
+
+            <input type="submit" id="submit">
+        </form>
+
+        <div class="square-1"></div>
+        <div class="square-2"></div>
+        <div class="square-3"></div>
+        <div class="square-4"></div>
+    </main>
+
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

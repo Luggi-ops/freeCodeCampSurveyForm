@@ -1,0 +1,229 @@
+/**font-family: 'Lato', sans-serif;
+font-family: 'Volkhov', serif;**/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background: linear-gradient(to right, #00b09b, #96c93d);
+    font-family: 'Lato', sans-serif;
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 300;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+h1{
+    font-size: 3.5rem;
+}
+
+.container{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/**Header**/
+
+.header{
+    margin-top: 3rem;
+}
+
+/**Form**/
+
+#survey-form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+}
+
+#survey-form input[type=text], #survey-form input[type=email], #survey-form input[type=number], #survey-form select, #survey-form textarea{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+    border: 1px solid #ffffff66;
+    background-color: #ffffff33;
+    width: 100%;
+    border-radius: .3rem;
+    padding: 1rem 1.5rem;
+    color: white;
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+    font-weight: 300;
+}
+
+#survey-form select{
+    color: #000;
+}
+
+#survey-form input[type=number]{
+    width: 10rem;
+}
+
+#survey-form input[type=submit]{
+    width: 20rem;
+    height: 5rem;
+    margin: 2rem auto;
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    cursor: pointer;
+    background-color: #00b09b;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+}
+
+#survey-form input[type=checkbox]{
+    margin-right: 1rem;
+}
+
+.dates{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.dates-group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.dates, .dropdown, .radio-group, .boxes-group{
+    margin: 1rem 0;
+}
+
+/**Background**/
+
+.square-1{
+    width: 10rem;
+    height: 10rem;
+    background-color: #ffffff33;
+    position: absolute;
+    left: 10%;
+    z-index: -1;
+    animation-name: square-1;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    
+}
+
+.square-2{
+    width: 5rem;
+    height: 5rem;
+    background-color: #ffffff33;
+    position: absolute;
+    left: 30%;
+    z-index: -1;
+    animation-name: square-2;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    
+}
+
+.square-3{
+    width: 15rem;
+    height: 15rem;
+    background-color: #ffffff33;
+    position: absolute;
+    left: 60%;
+    z-index: -1;
+    animation-name: square-3;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+}
+
+.square-4{
+    width: 7rem;
+    height: 7rem;
+    background-color: #ffffff33;
+    position: absolute;
+    left: 90%;
+    z-index: -1;
+    animation-name: square-4;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes square-1{
+    0%{
+        bottom: -30rem;
+        transform: rotate(0);
+    }
+    100%{
+        bottom: 80rem;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes square-2{
+    0%{
+        bottom: -10rem;
+        transform: rotate(45deg)
+    }
+
+    100%{
+        bottom: 80rem;
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes square-3{
+    0%{
+        bottom: -20rem;
+        transform: rotate(65deg)
+    }
+
+    50%{
+        bottom: 80rem;
+        transform: rotate(360deg)
+    }
+
+    100%{
+        bottom: -20rem;
+        transform: rotate(65deg);
+    }
+}
+
+@keyframes square-4{
+    0%{
+        bottom: -15rem;
+        transform: rotate(30deg)
+    }
+
+    100%{
+        bottom: 80rem;
+        transform: rotate(360deg)
+    }
+}
+
+/**Queries**/
+
+@media screen and (max-width: 900px){
+    body{
+        overflow-y: visible;
+    }
+
+    #survey-form{
+        width: 95%;
+    }
+}
