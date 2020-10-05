@@ -227,3 +227,17 @@ h1{
         width: 95%;
     }
 }
+
+@media screen and (max-width: 480px){
+    .square-3{
+        width: 7rem;
+        height: 7rem;
+        left: 60%;
+    }
+    
+    .square-4{
+        width: 4rem;
+        height: 4rem;
+        left: 60%;
+    }
+}
